@@ -1,0 +1,44 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="com.android.test.MenuFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <ImageButton
+            android:id="@+id/linterna"
+            style="@style/Botones"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorFocus"
+            app:srcCompat="@drawable/ic_lightbulb" />
+
+        <ImageButton
+            android:id="@+id/musica"
+            style="@style/Botones"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorDefault"
+            app:srcCompat="@drawable/ic_music" />
+
+        <ImageButton
+            android:id="@+id/favorito"
+            style="@style/Botones"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorDefault"
+            app:srcCompat="@drawable/ic_heart" />
+    </LinearLayout>
+</FrameLayout>
